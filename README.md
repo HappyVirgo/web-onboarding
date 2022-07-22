@@ -1,7 +1,3 @@
-# Hedvig Web Onboarding
-
-This is the web based onboarding that you can find at [https://www.hedvig.com/se-en/new-member](https://www.hedvig.com/se-en/new-member).
-
 ## Prerequisites
 
 - `node`
@@ -54,22 +50,6 @@ $ yarn watch
 
 The app is running on `http://localhost:8040`. Visit [http://localhost:8040/se/new-member/](http://localhost:8040/se/new-member/) to view the first screen of the onboarding flow.
 
-### Debugger UI
-
-Manually stepping through the onboarding flow becomes tedious. Therefore, you can use the "debugger UI" that let's you bypass the initial steps and takes you straight to the "Offer page".
-
-You access it locally on this URL: `http://localhost:8040/se/new-member/debugger`.
-It also works in staging: `https://www.dev.hedvigit.com/se/new-member/debugger`.
-
-![Debugger UI Preview](.github/assets/debugger-ui-preview.png)
-
-> You might experience problems due to existing state interfering with the session. Click the "Nuke all state 💣" button to perform a reset and try again.
-
-1. Fill in offer information.
-1. Click the "Create quote" button.
-1. You should see a bunch of GraphQL data and a button to take you to the "Offer page".
-
-Or, if you have an id of an existing quote you'd like to use it's possible to replace the quote id generated for this session - the existing quote will be fetched as soon as you add the id to the input field.
 
 ## E2E Tests
 
